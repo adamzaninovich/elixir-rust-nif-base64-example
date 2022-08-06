@@ -1,21 +1,10 @@
 # Base64
 
-**TODO: Add description**
+Implements a simple nif in Rust that uses the [rust-base64](https://github.com/marshallpierce/rust-base64) create.
 
-## Installation
+Uses [Rustler](https://github.com/rusterlium/rustler) project to build the nif.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `base64` to your list of dependencies in `mix.exs`:
+## Interesting things
 
-```elixir
-def deps do
-  [
-    {:base64, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/base64>.
-
+- See [`lib/base64.ex`](https://github.com/adamzaninovich/elixir-rust-nif-base64-example/blob/main/lib/base64.ex) for the Elixir implementation.
+- See [`native/base64_nif/src/lib.rs`](https://github.com/adamzaninovich/elixir-rust-nif-base64-example/blob/main/native/base64_nif/src/lib.rs) for the Rust implementation.

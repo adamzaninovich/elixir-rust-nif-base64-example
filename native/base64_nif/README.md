@@ -6,14 +6,7 @@
 
 ## To load the NIF:
 
-```elixir
-defmodule Base64 do
-    use Rustler, otp_app: :base64, crate: "base64_nif"
-
-    # When your NIF is loaded, it will override this function.
-    def add(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
-end
-```
+See Elixir module `Base64`
 
 ## Examples
 
