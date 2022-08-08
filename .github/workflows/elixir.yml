@@ -30,7 +30,10 @@ jobs:
         path: deps
         key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
         restore-keys: ${{ runner.os }}-mix-
-    - name: Install dependencies
+    - name: Build Rust dependencies
+      working-directory: ./native/base64_nif
+      run: cargo build --verbose
+    - name: Install Elixir dependencies
       run: mix deps.get
     - name: Run tests
       run: mix test
