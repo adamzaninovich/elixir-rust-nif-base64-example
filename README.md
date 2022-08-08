@@ -1,6 +1,6 @@
 # Base64
 
-Implements a simple nif in Rust that uses the [rust-base64](https://github.com/marshallpierce/rust-base64) create.
+Implements a simple nif in Rust that uses the [rust-base64](https://github.com/marshallpierce/rust-base64) crate.
 
 Uses the [Rustler](https://github.com/rusterlium/rustler) project to build the nif.
 

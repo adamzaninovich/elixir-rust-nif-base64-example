@@ -17,7 +17,7 @@ defmodule Base64 do
     iex> Base64.decode("aGVsbG8=")
     "hello"
   """
-  def decode(_b64, _opt \\ :standard), do: error()
+  def decode(_base64, _opt \\ :standard), do: error()
 
   @spec encode(binary, atom) :: binary
   @doc """
@@ -35,7 +35,7 @@ defmodule Base64 do
     iex> Base64.encode("hello")
     "aGVsbG8="
   """
-  def encode(_s, _opt \\ :standard), do: error()
+  def encode(_string, _opt \\ :standard), do: error()
 
   defp error, do: :erlang.nif_error(:nif_not_loaded)
 end
