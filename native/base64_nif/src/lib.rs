@@ -24,6 +24,7 @@ fn decode(b64: String, opt: Atom) -> String {
 #[rustler::nif]
 fn encode(string: String, opt: Atom) -> String {
     let config: base64::Config = match_config(opt);
+
     base64::encode_config(string.as_bytes(), config)
 }
 
